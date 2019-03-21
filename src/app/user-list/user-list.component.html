@@ -1,0 +1,10 @@
+<h3>Les utlisateurs</h3>
+
+<div *ngIf="error">{{ error }}</div>
+
+<app-user-card 
+    *ngFor="let user of users" 
+    [user]="user"
+    (deleteEvent)="deleteCard($event)"
+    >
+</app-user-card>

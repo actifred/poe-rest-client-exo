@@ -1,0 +1,10 @@
+<div class="card-container">
+  <div class="avatar-container">
+    <img [src]="user.avatar">
+  </div>
+  <div class="details-container">
+    <h4>{{ user.firstname }} {{ user.lastname }}</h4>
+    Email : {{ user.email }}<br>
+    <button (click)="askDeletion()">Supprimer</button>
+  </div>
+</div>
