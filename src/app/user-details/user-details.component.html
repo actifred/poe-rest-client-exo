@@ -1,3 +1,12 @@
 <p>
   Edition du membre {{ user.firstname }}
 </p>
+<form
+  [formGroup]="formulaire"
+  (ngSubmit)="modifieUtilisateur()">
+  <input type="text" formControlName="firstname">
+  <input type="text" formControlName="lastname">
+  <input type="text" formControlName="email"><br>
+  <input type="text" formControlName="avatar"><br>
+  <button type="submit" [disabled]="!formulaire.valid" >Changer</button>
+</form>
