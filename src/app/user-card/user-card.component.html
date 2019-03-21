@@ -3,8 +3,10 @@
     <img [src]="user.avatar">
   </div>
   <div class="details-container">
-    <h4>{{ user.firstname }} {{ user.lastname }}</h4>
-    Email : {{ user.email }}<br>
+    <h3>{{ user.firstname }} {{ user.lastname }}</h3>
+    <p>
+      <a href="mailto:{{ user.email }}">Envoyer un e-mail</a>
+    </p>
     <button (click)="askDeletion()">Supprimer</button>
     <button (click)="goToDetails()">Modifier</button>
   </div>

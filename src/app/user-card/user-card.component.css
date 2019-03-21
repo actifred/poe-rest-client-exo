@@ -1,13 +1,17 @@
 .card-container {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     margin: 8px;
     padding: 12px;
     border: solid 1px black;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    width: 320px;
 }
 
 .avatar-container {
     padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .avatar-container img {
@@ -16,5 +20,5 @@
 }
 
 .details-container {
-    padding: 5px;
+    margin-left: 20px;
 }
